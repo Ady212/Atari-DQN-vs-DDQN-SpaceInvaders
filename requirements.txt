@@ -3,6 +3,7 @@ keras>=3
 gymnasium[atari]>=1.0
 ale-py>=0.9
 numpy
+opencv-python
 matplotlib
 imageio
 imageio-ffmpeg
