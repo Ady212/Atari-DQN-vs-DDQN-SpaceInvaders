@@ -1,0 +1,9 @@
+tensorflow>=2.16
+keras>=3
+gymnasium[atari]>=1.0
+ale-py>=0.9
+numpy
+matplotlib
+imageio
+imageio-ffmpeg
+ipython
