@@ -52,7 +52,20 @@ This version was cleaned up after the module was graded:
 
 The plots and video in `results/` come from a run of this fixed version.
 
-## Running it
+## Use the trained agents (no training needed)
+
+The fully trained models are in [`models/`](models/) (`double_dqn.keras` and `vanilla_dqn.keras`, about 7 MB each). To watch one play:
+
+```bash
+pip install -r requirements.txt
+python play_agent.py                            # Double DQN, records gameplay.mp4
+python play_agent.py --model vanilla            # Vanilla DQN
+python play_agent.py --episodes 5 --render      # 5 games in a live window, prints the average score
+```
+
+`play_agent.py` rebuilds the network and loads only the saved weights, so it works on any Python version.
+
+## Retraining from scratch
 
 ```bash
 pip install -r requirements.txt
